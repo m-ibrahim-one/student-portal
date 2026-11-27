@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <nav class="navbar">
+      <span class="logo">LGU Portal</span>
+      <ul class="nav-links">
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#grades">Grades</a></li>
+      </ul>
+    </nav>
+
+    <section id="dashboard" class="dashboard">
+      <div class="profile-card">
+        <div class="avatar">IB</div>
+        <div class="profile-info">
+          <h2>Muhammad Ibrahim</h2>
+          <p class="roll">Roll No: FA-2025/014/BS DFCS</p>
+          <p class="program">BS Digital Forensics &amp; Cyber Security — Section A</p>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Courses Enrolled</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Assignments Due</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">82%</span>
+          <span class="stat-label">Attendance</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section">
+      <h3 class="section-title">Enrolled Courses</h3>
+      <div class="course-list">
+        <div class="course-card">
+          <span class="course-code">DFCS-101</span>
+          <span class="course-name">Introduction to Cyber Security</span>
+        </div>
+        <div class="course-card">
+          <span class="course-code">DFCS-102</span>
+          <span class="course-name">Digital Forensics Fundamentals</span>
+        </div>
+        <div class="course-card">
+          <span class="course-code">DFCS-201</span>
+          <span class="course-name">Fullstack Development Lab</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="grades" class="section">
+      <h3 class="section-title">Recent Grades</h3>
+      <table class="grades-table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Mid</th>
+            <th>Assignment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DFCS-101</td>
+            <td>78</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>DFCS-102</td>
+            <td>82</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>DFCS-201</td>
+            <td>75</td>
+            <td>88</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="btn-row">
+      <button id="noticeBtn" onclick="showNotice()">View Latest Notice</button>
+    </div>
+
+    <div id="noticeBox" class="notice-box hidden">
+      <strong>Notice:</strong> Mid-term exams are scheduled for next week. Check the timetable on the noticeboard.
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
